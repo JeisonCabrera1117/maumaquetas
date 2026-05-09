@@ -116,7 +116,7 @@ const About = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&fit=crop&crop=center"
+                src="/images/about/3.jpeg"
                 alt="Artesano trabajando en maqueta artesanal"
                 className="w-full h-80 lg:h-96 object-cover"
                 loading="lazy"
