@@ -3,13 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://maumaquetas.vercel.app/" />
 
+    <!-- Preconnect para rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
     <title>Maumaquetas | Maquetas Artesanales Personalizadas - Edificios, Iglesias y Vehículos</title>
     <meta name="description" content="Maumaquetas: arte en maquetas artesanales personalizadas. Creamos maquetas arquitectónicas de edificios, iglesias, casas y vehículos (carros, volquetas, camiones). Compra tu maqueta personalizada. WhatsApp: 314 744 6053." />
     <meta name="keywords" content="maquetas artesanales, maquetas personalizadas, arte en maquetas, compra de maquetas, maquetas arquitectónicas, maquetas de edificios, maquetas de iglesias, maquetas de casas, maquetas de vehículos, maquetas colombia" />
+    <meta name="author" content="Maumaquetas" />
+    <meta name="geo.region" content="CO" />
+    <meta name="geo.placename" content="Colombia" />
+    <meta name="theme-color" content="#f59e0b" />
+    <meta name="format-detection" content="telephone=yes" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -17,6 +28,9 @@
     <meta property="og:title" content="Maumaquetas | Maquetas Artesanales Personalizadas" />
     <meta property="og:description" content="Arte en maquetas artesanales. Edificios, iglesias, casas y vehículos hechos a mano. Solicita tu maqueta personalizada." />
     <meta property="og:image" content="https://maumaquetas.vercel.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Maumaquetas - Maquetas Artesanales Personalizadas de Colombia" />
     <meta property="og:locale" content="es_CO" />
     <meta property="og:site_name" content="Maumaquetas" />
 
@@ -25,30 +39,129 @@
     <meta name="twitter:title" content="Maumaquetas | Maquetas Artesanales Personalizadas" />
     <meta name="twitter:description" content="Arte en maquetas artesanales. Edificios, iglesias, casas y vehículos hechos a mano." />
     <meta name="twitter:image" content="https://maumaquetas.vercel.app/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Maumaquetas - Maquetas Artesanales Personalizadas de Colombia" />
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Maumaquetas",
-      "description": "Taller artesanal especializado en maquetas personalizadas de edificios, iglesias, casas y vehículos.",
-      "telephone": "+573147446053",
-      "url": "https://maumaquetas.vercel.app",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "CO"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+573147446053",
-        "contactType": "customer service",
-        "availableLanguage": "Spanish"
-      },
-      "offers": {
-        "@type": "Offer",
-        "description": "Maquetas artesanales personalizadas"
-      }
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://maumaquetas.vercel.app/#business",
+          "name": "Maumaquetas",
+          "description": "Taller artesanal especializado en maquetas personalizadas de edificios, iglesias, casas y vehículos. Más de 10 años de experiencia y más de 200 maquetas creadas a mano.",
+          "url": "https://maumaquetas.vercel.app",
+          "telephone": "+573147446053",
+          "image": "https://maumaquetas.vercel.app/og-image.jpg",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CO"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Colombia"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+573147446053",
+            "contactType": "customer service",
+            "availableLanguage": "Spanish"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Catálogo de Maquetas Artesanales",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Maquetas de Iglesias",
+                  "description": "Réplicas detalladas de templos e iglesias con ornamentación en porcelanicron"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Maquetas de Vehículos",
+                  "description": "Carros, camiones, volquetas, mulas y maquinaria pesada a escala"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Maquetas Urbanísticas",
+                  "description": "Maquetas de residencias, barrios y proyectos de infraestructura urbana"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Maquetas Educativas",
+                  "description": "Modelos didácticos para colegios, universidades y museos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Maquetas Personalizadas",
+                  "description": "Diseño personalizado según las especificaciones del cliente"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Cómo solicito una maqueta personalizada?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Contáctame por WhatsApp al 314 744 6053. Cuéntame tu idea, el tipo de maqueta que necesitas y cualquier referencia. Respondo en menos de 2 horas en horario hábil."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué tipos de maquetas artesanales fabrican?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Fabricamos maquetas de iglesias y catedrales, edificios y complejos urbanísticos, vehículos (carros, camiones, volquetas, tractomulas), maquetas educativas y cualquier diseño personalizado. Todo hecho a mano con cartón, porcelanicron y pinturas acrílicas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Hacen envíos a todo Colombia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, realizamos envíos a todo Colombia. Contáctanos por WhatsApp al 314 744 6053 para cotizar el envío a tu ciudad."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto tiempo tarda en fabricarse una maqueta?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El tiempo varía según la complejidad del proyecto. Contáctame con los detalles y te daré un tiempo estimado junto con la cotización personalizada."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Con qué materiales se fabrican las maquetas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Usamos cartón corrugado y plano, cartulina de diversos gramajes, porcelanicron para detalles finos, pinturas acrílicas y barnices, y herramientas de precisión artesanal."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
   </head>

@@ -28,14 +28,6 @@ const materials = [
   {
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-      </svg>
-    ),
-    name: 'Madera balsa y materiales naturales',
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
       </svg>
     ),
@@ -97,8 +89,8 @@ const About = () => {
             </p>
             <p className="text-stone-600 leading-relaxed mb-10">
               Mi objetivo es transformar tus ideas en maquetas que no solo sean precisas, sino
-              que cuenten una historia y generen emoción. Ya sea para proyectos arquitectónicos,
-              coleccionismo, regalos personalizados o decoración, me comprometo a entregar un
+              que cuenten una historia y generen emoción. Ya sea para coleccionismo,
+              regalos personalizados o decoración, me comprometo a entregar un
               trabajo excepcional.
             </p>
 

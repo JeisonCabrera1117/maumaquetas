@@ -13,6 +13,8 @@ const Hero = () => {
           alt="Maqueta arquitectónica artesanal"
           className="w-full h-full object-cover"
           loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-stone-950/90 via-stone-900/75 to-stone-800/55" />
       </div>
