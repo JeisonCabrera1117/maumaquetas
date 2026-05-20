@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /dist/
 
-Sitemap: https://maumaquetas.vercel.app/sitemap.xml
+Sitemap: https://www.maumaquetas.com/sitemap.xml
